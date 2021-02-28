@@ -1,14 +1,12 @@
 import React from "react";
 import useSound from "use-sound";
 
-const Chaatreuse = require("./chaatreuse.mp3");
-
-const VoiceButton = (props: { title: string }) => {
-  const { title } = props;
+const VoiceButton = (props: { file: any, title: string }) => {
+  const { file, title } = props;
 
   const playSound = () => {
-    let audio = new Audio()
-    audio.src = "./chaatreuse.mp3"
+    let audio = new Audio();
+    audio.src = file
     audio.load()
     if (audio) {
       audio
