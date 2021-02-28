@@ -17,7 +17,10 @@ import SheetFack from "./assets/sheetfack.mp3";
 const App = () => {
   return (
     <div className="App">
-      <Row style={{ width: "100vw" }}>
+      <div style={{ marginTop: 20, marginLeft: 20, textAlign: "left" }}>
+        <img className="App-logo" src={Yutong} alt="yutong" />
+      </div>
+      <Row>
         <Col md={6}>
           <VoiceButton title="Hey, Ming" file={HeyMing} />
         </Col>
