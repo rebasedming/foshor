@@ -1,24 +1,45 @@
 import React from 'react';
+import {Row, Col} from "react-bootstrap"
 import logo from './logo.svg';
 import './App.css';
+import Yutong from "./assets/yutong.png"
+import VoiceButton from "./components/voiceButton"
 
-function App() {
+const App = () => {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div style={{ marginTop: 20, marginLeft: 20, textAlign: "left" }}>
+        <img src={Yutong} alt="yutong" />
+      </div>
+      <Row>
+        <Col md={6}>
+          <VoiceButton title="Chaa-treuse" />
+        </Col>
+        <Col md={6}>
+          <VoiceButton title="Fo-shor" />
+        </Col>
+        <Col md={6}>
+          <VoiceButton title="I'm deceasing" />
+        </Col>
+        <Col md={6}>
+          <VoiceButton title="Come to my place" />
+        </Col>
+        <Col md={6}>
+          <VoiceButton title="Jeez, man" />
+        </Col>
+        <Col md={6}>
+          <VoiceButton title="Sheet. Fack." />
+        </Col>
+        <Col md={6}>
+          <VoiceButton title="Cognac" />
+        </Col>
+        <Col md={6}>
+          <VoiceButton title="Hey, Ming" />
+        </Col>
+        <Col md={6}>
+          <VoiceButton title="Manhattan" />
+        </Col>
+      </Row>
     </div>
   );
 }
