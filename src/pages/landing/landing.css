@@ -1,0 +1,25 @@
+.spinning-yutong {
+  height: 7rem;
+  width: 7rem;
+  pointer-events: none;
+}
+
+.button-wrapper {
+  margin-right: 40px;
+  margin-bottom: 10px;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .spinning-yutong {
+    animation: spinning infinite 5s linear;
+  }
+}
+
+@keyframes spinning {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
